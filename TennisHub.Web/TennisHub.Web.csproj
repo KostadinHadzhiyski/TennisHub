@@ -15,4 +15,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TennisHub.Data.Models\TennisHub.Data.Models.csproj" />
+    <ProjectReference Include="..\TennisHub.Data\TennisHub.Data.csproj" />
+  </ItemGroup>
+
 </Project>
