@@ -10,14 +10,14 @@ namespace TennisHub.Web
     {
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<TennisHubDbContext>(options =>
                 options.UseSqlServer(connectionString));
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-            builder.Services.AddRazorPages();
+
+
             builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
 
                 {
@@ -29,11 +29,18 @@ namespace TennisHub.Web
                     options.SignIn.RequireConfirmedEmail = false;
                     options.SignIn.RequireConfirmedPhoneNumber = false;
                 })
-                .AddEntityFrameworkStores<TennisHubDbContext>();
+                .AddEntityFrameworkStores<TennisHubDbContext>()
+                .AddDefaultTokenProviders()
+                .AddRoles<IdentityRole<Guid>>()
+                .AddSignInManager<SignInManager<ApplicationUser>>()
+                .AddUserManager<UserManager<ApplicationUser>>();
+
+            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+            builder.Services.AddRazorPages();
             builder.Services.AddControllersWithViews();
         
 
-            var app = builder.Build();
+            WebApplication? app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -51,7 +58,7 @@ namespace TennisHub.Web
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
