@@ -17,7 +17,7 @@ namespace TennisHub.Web
                 options.UseSqlServer(connectionString));
 
 
-            builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
+            builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
 
                 {
                     options.SignIn.RequireConfirmedAccount = false;
@@ -30,7 +30,7 @@ namespace TennisHub.Web
                 })
                 .AddEntityFrameworkStores<TennisHubDbContext>()
                 .AddDefaultTokenProviders()
-                .AddRoles<IdentityRole<Guid>>()
+                //.AddRoles<IdentityRole<Guid>>()
                 .AddSignInManager<SignInManager<ApplicationUser>>()
                 .AddUserManager<UserManager<ApplicationUser>>();
 
