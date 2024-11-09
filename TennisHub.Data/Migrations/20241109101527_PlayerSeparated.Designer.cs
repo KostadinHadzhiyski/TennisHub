@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TennisHub.Web.Data;
 
@@ -11,9 +12,11 @@ using TennisHub.Web.Data;
 namespace TennisHub.Data.Migrations
 {
     [DbContext(typeof(TennisHubDbContext))]
-    partial class TennisHubDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241109101527_PlayerSeparated")]
+    partial class PlayerSeparated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

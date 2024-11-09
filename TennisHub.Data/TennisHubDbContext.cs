@@ -17,7 +17,7 @@ namespace TennisHub.Web.Data
         }
 
         public DbSet<UserFriend> UsersFriends { get; set; }
-        public DbSet<UserPartner> UsersPartners { get; set; }
+        public DbSet<PlayerPartner> UsersPartners { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
