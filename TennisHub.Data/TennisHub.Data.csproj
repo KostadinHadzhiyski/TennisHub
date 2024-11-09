@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TennisHub.Common\TennisHub.Common.csproj" />
     <ProjectReference Include="..\TennisHub.Data.Models\TennisHub.Data.Models.csproj" />
   </ItemGroup>
 

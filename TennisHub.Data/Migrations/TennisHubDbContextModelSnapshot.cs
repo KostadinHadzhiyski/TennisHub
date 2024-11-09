@@ -273,7 +273,7 @@ namespace TennisHub.Data.Migrations
 
                     b.HasIndex("FriendId");
 
-                    b.ToTable("UsersFriends");
+                    b.ToTable("UsersFriends", (string)null);
                 });
 
             modelBuilder.Entity("TennisHub.Data.Models.UserPartner", b =>
@@ -288,7 +288,7 @@ namespace TennisHub.Data.Migrations
 
                     b.HasIndex("PartnerId");
 
-                    b.ToTable("UsersPartners");
+                    b.ToTable("UsersPartners", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>

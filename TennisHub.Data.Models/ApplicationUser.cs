@@ -3,8 +3,10 @@ namespace TennisHub.Data.Models
 {
     using Microsoft.AspNetCore.Identity;
     using System.ComponentModel.DataAnnotations;
+
     using TennisHub.Data.Models.Enumerations;
-    using static TennisHub.Data.Models.ModelsValidationConstants.Player;
+
+    using static TennisHub.Common.EntityValidationConstants.Player;
 
     public class ApplicationUser : IdentityUser<Guid>
     {
@@ -48,10 +50,7 @@ namespace TennisHub.Data.Models
 
 
 
-        public ICollection<MatchType> PrefferedMatchesTypes { get; set; } = new HashSet<MatchType>();
-
-        //public ICollection<ApplicationUser> Friends { get; set; } = new HashSet<ApplicationUser>();
-        //public ICollection<ApplicationUser> Partners { get; set; } = new HashSet<ApplicationUser>();
+        public IList<MatchType> PrefferedMatchesTypes { get; set; } = new List<MatchType>();
 
 
         public ICollection<UserFriend> Friends { get; set; } = new HashSet<UserFriend>();

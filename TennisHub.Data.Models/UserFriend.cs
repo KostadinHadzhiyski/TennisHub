@@ -1,11 +1,11 @@
 ﻿
-
-using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.InteropServices;
-
 namespace TennisHub.Data.Models
 {
+    using Microsoft.EntityFrameworkCore;
+    using System.ComponentModel.DataAnnotations.Schema;
+
+
+
     [PrimaryKey(nameof(UserId), nameof(FriendId))]
     public class UserFriend
     {

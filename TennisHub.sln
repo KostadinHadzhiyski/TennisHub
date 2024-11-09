@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisHub.Web", "TennisHub.Web\TennisHub.Web.csproj", "{9948948C-77F8-4187-A3DB-15C12A579960}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisHub.Web", "TennisHub.Web\TennisHub.Web.csproj", "{9948948C-77F8-4187-A3DB-15C12A579960}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{FC5EDF6F-156D-4AF7-B638-36CD615EEB6E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{C098C8F5-7D6D-4B70-AA27-3E4AD80E0954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisHub.Data", "TennisHub.Data\TennisHub.Data.csproj", "{07038C9A-E68D-45B3-B5C4-40CE4B894F88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisHub.Data", "TennisHub.Data\TennisHub.Data.csproj", "{07038C9A-E68D-45B3-B5C4-40CE4B894F88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisHub.Data.Models", "TennisHub.Data.Models\TennisHub.Data.Models.csproj", "{21721118-2E94-48E6-8DD6-3CA62A674D66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisHub.Data.Models", "TennisHub.Data.Models\TennisHub.Data.Models.csproj", "{21721118-2E94-48E6-8DD6-3CA62A674D66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisHub.Common", "TennisHub.Common\TennisHub.Common.csproj", "{D21B88A7-84B7-4E33-B68D-021A8502D0A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{21721118-2E94-48E6-8DD6-3CA62A674D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21721118-2E94-48E6-8DD6-3CA62A674D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21721118-2E94-48E6-8DD6-3CA62A674D66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21B88A7-84B7-4E33-B68D-021A8502D0A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21B88A7-84B7-4E33-B68D-021A8502D0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21B88A7-84B7-4E33-B68D-021A8502D0A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21B88A7-84B7-4E33-B68D-021A8502D0A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
