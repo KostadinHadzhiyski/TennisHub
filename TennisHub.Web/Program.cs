@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TennisHub.Web.Data;
 using TennisHub.Data.Models;
-using Microsoft.Extensions.Options;
 
 namespace TennisHub.Web
 {
