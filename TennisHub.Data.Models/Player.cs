@@ -17,6 +17,7 @@ namespace TennisHub.Data.Models
         [ForeignKey(nameof(UserId))]
         public ApplicationUser User { get; set; } = null!;
 
+
         [Required]
         [MaxLength(FirstNameMaxLength)]
         public string FirstName { get; set; } = null!;
@@ -27,7 +28,6 @@ namespace TennisHub.Data.Models
 
         [Required]
         public Gender Gender { get; set; }
-
 
         [Required]
         public DateTime BirthDay { get; set; }

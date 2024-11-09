@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisHub.Data.Models", "Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisHub.Common", "TennisHub.Common\TennisHub.Common.csproj", "{D21B88A7-84B7-4E33-B68D-021A8502D0A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TennisHub.Web.ViewModels", "TennisHub.Web.ViewModels\TennisHub.Web.ViewModels.csproj", "{852E1A05-1861-4946-9F14-2640DDD6A2A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{D21B88A7-84B7-4E33-B68D-021A8502D0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D21B88A7-84B7-4E33-B68D-021A8502D0A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D21B88A7-84B7-4E33-B68D-021A8502D0A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852E1A05-1861-4946-9F14-2640DDD6A2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852E1A05-1861-4946-9F14-2640DDD6A2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852E1A05-1861-4946-9F14-2640DDD6A2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852E1A05-1861-4946-9F14-2640DDD6A2A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{9948948C-77F8-4187-A3DB-15C12A579960} = {FC5EDF6F-156D-4AF7-B638-36CD615EEB6E}
 		{07038C9A-E68D-45B3-B5C4-40CE4B894F88} = {C098C8F5-7D6D-4B70-AA27-3E4AD80E0954}
 		{21721118-2E94-48E6-8DD6-3CA62A674D66} = {C098C8F5-7D6D-4B70-AA27-3E4AD80E0954}
+		{852E1A05-1861-4946-9F14-2640DDD6A2A9} = {FC5EDF6F-156D-4AF7-B638-36CD615EEB6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34082115-2BFD-4ED8-98A3-01A7B9B6D6E8}

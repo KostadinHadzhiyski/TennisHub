@@ -8,7 +8,7 @@ namespace TennisHub.Web.Data
 
     using TennisHub.Data.Models;
 
-    public class TennisHubDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
+    public class TennisHubDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, Guid>
     {
 
         public TennisHubDbContext(DbContextOptions<TennisHubDbContext> options)

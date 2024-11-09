@@ -1,0 +1,34 @@
+﻿
+@using TennisHub.Web.ViewModels.Player
+@model PlayerDetailsViewModel
+@{
+    ViewData["Title"] = "Player details:";
+}
+
+
+<h1 class="text-center">User Details</h1>
+
+<div class="row align-items-center justify-content-center">
+    <div class="col-md-4 ">
+        <div>
+            <input class="form-control" readonly placeholder=@Model.FirstName />
+        </div>
+        <div>
+            <input class="form-control" readonly placeholder=@Model.LastName />
+        </div>
+        <div>
+            <input class="form-control" readonly placeholder=@Model.Email />
+        </div>
+        <div>
+            <input class="form-control" readonly placeholder=@Model.Gender />
+        </div>
+        <div>
+            <input class="form-control" readonly placeholder=@Model.PhoneNumber />
+        </div>
+        
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

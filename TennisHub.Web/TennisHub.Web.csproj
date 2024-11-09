@@ -24,6 +24,7 @@
     <ProjectReference Include="..\TennisHub.Common\TennisHub.Common.csproj" />
     <ProjectReference Include="..\TennisHub.Data.Models\TennisHub.Data.Models.csproj" />
     <ProjectReference Include="..\TennisHub.Data\TennisHub.Data.csproj" />
+    <ProjectReference Include="..\TennisHub.Web.ViewModels\TennisHub.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

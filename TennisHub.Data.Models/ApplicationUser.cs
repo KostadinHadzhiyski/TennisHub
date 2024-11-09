@@ -2,8 +2,9 @@
 namespace TennisHub.Data.Models
 {
     using Microsoft.AspNetCore.Identity;
-    using System.ComponentModel.DataAnnotations.Schema;
-
+    using System.ComponentModel.DataAnnotations;
+    using TennisHub.Data.Models.Enumerations;
+    using static TennisHub.Common.EntityValidationConstants.Player;
 
     public class ApplicationUser : IdentityUser<Guid>
     {
@@ -13,6 +14,7 @@ namespace TennisHub.Data.Models
         }
 
         public Player? Player { get; set; }
+
 
         public ICollection<UserFriend> Friends { get; set; } = new HashSet<UserFriend>();
 
